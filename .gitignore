@@ -1,0 +1,61 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# ---- Packaging / Build ----
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+share/python-wheels/
+MANIFEST
+
+# ---- Editable-Install-Artefakte ----
+__editable__.*
+*.pth
+
+# ---- Virtuelle Umgebungen ----
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Test / Coverage / Typpruefung ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ---- IDE / Editor ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---- Betriebssystem ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Projektspezifisch ----
+# Lokale Messdaten / erzeugte Waveforms / Logs nicht versionieren:
+*.log
+*.npy
+*.npz
+*.bin
+data/
+output/
+scratch/
+
+# Der SPCM-Treiber (spcm_core) wird per pip installiert, NICHT eingecheckt.

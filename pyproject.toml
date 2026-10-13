@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectrum-awg"
+version = "0.1.0"
+description = "Klassenbibliothek zur Konfiguration und zum Betrieb einer Spectrum M4i.6631-x8 (AWG) im Single- und Sequenced-Modus."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.20"]
+
+[project.optional-dependencies]
+# Empfohlene SPCM-Treiberanbindung: offizielles pip-Paket 'spcm_core', das sich zur
+# Laufzeit an die installierten, kompilierten Kartentreiber bindet. Alternativ kann
+# der klassische Treiber ('pyspcm'/'regs') auf dem PYTHONPATH genutzt werden.
+driver = ["spcm_core"]
+
+[tool.setuptools]
+packages = ["spectrum_awg"]

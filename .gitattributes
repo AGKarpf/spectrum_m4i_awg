@@ -1,0 +1,10 @@
+# Einheitliche Zeilenenden im Repo (LF), damit das Repo plattformuebergreifend
+# ohne Diff-Rauschen funktioniert. Git normalisiert Textdateien automatisch.
+* text=auto eol=lf
+
+# Explizit binaer (keine EOL-Normalisierung):
+*.png binary
+*.jpg binary
+*.bin binary
+*.npy binary
+*.npz binary

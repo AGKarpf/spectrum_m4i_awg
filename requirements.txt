@@ -1,0 +1,9 @@
+# Laufzeit
+numpy>=1.20
+
+# SPCM-Treiberanbindung (EMPFOHLEN): offizielles pip-Paket von Spectrum.
+# Bindet sich zur Laufzeit an die installierten, kompilierten Kartentreiber an.
+spcm_core
+
+# Alternativ statt spcm_core der klassische Treiber: die Module 'pyspcm' und 'regs'
+# aus dem SPCM-Installationsverzeichnis auf den PYTHONPATH legen (siehe README.md).
