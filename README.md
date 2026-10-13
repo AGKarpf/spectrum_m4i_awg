@@ -38,7 +38,7 @@ Trigger, Dynamikbereich (Amplitude) sowie die Anzahl und Abfolge der Sequenzen.
 3. **Diese Bibliothek installieren** (direkt von GitHub):
 
    ```bash
-   pip install "spectrum-awg[driver] @ git+https://github.com/GITHUB_USER_PLACEHOLDER/spectrum_m4i_awg.git"
+   pip install "spectrum-awg[driver] @ git+https://github.com/AGKarpf/spectrum_m4i_awg.git"
    ```
 
    Das Extra `[driver]` installiert `spcm_core` mit. Im ausgecheckten Repo für die
@@ -197,7 +197,7 @@ Abhängigkeit in ihre `pyproject.toml` ein:
 
 ```toml
 dependencies = [
-    "spectrum-awg @ git+https://github.com/GITHUB_USER_PLACEHOLDER/spectrum_m4i_awg.git",
+    "spectrum-awg @ git+https://github.com/AGKarpf/spectrum_m4i_awg.git",
 ]
 ```
 
